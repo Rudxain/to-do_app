@@ -1,0 +1,90 @@
+:root {
+	--bg-color: #ddd;
+	--obj-color: #fff;
+	--shadow-color: #0006;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #000;
+		--obj-color: #222;
+	}
+}
+
+* {
+	min-width: 0
+}
+
+html {
+	font-family: sans-serif;
+	background: var(--bg-color);
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-height: 50vh;
+	/*padding-top: 1em;*/
+	z-index: 1;
+	overflow: scroll;
+
+	background: var(--obj-color);
+	filter: drop-shadow(0 0 0.25em var(--shadow-color));
+}
+
+input,
+button {
+	margin: 1em
+}
+
+button {
+	font-family: monospace
+}
+
+#act {
+	padding: 0;
+	margin: 0
+}
+
+header,
+#act,
+#add,
+#ls {
+	display: flex;
+	justify-content: center;
+}
+
+header,
+#ls {
+	flex-direction: column;
+	align-items: center;
+}
+
+#ls {
+	position: relative;
+	top: 8em;
+	gap: 0.5em;
+	margin: 0.5em;
+}
+
+#f,
+#ls>div {
+	min-width: 4em;
+	max-width: 32em;
+}
+
+#ls>div {
+	padding: 0.25em 0.5em;
+	border-radius: 6px;
+	background: var(--obj-color);
+}
+
+.done {
+	text-decoration: line-through;
+	opacity: 0.5;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+	<meta charset=utf-8>
+	<title>🗒️</title>
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<meta name=color-scheme content="light dark">
+	<link rel=stylesheet href=main.css>
+	<script src=main.js defer></script>
+</head>
+
+<body>
+	<header>
+		<div id=act>
+			<button id=save title="save all to storage">💾</button>
+			<button id=rm-done title='delete all marked as "done"'>➖➖</button>
+		</div>
+		<div id=add>
+			<form id=f>
+				<label for=tbox>Task</label>
+				<!-- `\p{graph}` and `\p{print}` are too new -->
+				<input type=text id=tbox size=32 maxlength=64 autofocus required
+					pattern="[^\x00-\x1f]*[^\x00-\x20\s][^\x00-\x1f]*" title="At least 1 non-space char">
+				<button title="add new, deleting duplicates">➕</button>
+			</form>
+		</div>
+	</header>
+	<main id=ls></main>
+</body>
+
+</html>
