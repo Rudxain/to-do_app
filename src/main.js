@@ -87,9 +87,12 @@
 		// the encoding isn't Unicode-safe,
 		// so we can't use the `String` iterator
 		for (const [i, /**UTF-16 code-unit*/c] of serialized_tasks.split("").entries()) {
-			// this branch can be skipped
-			// by assuming the last `c` is a term.
-			// but that would complicate the loader algorithm.
+			/*
+			This branch can be skipped
+			by assuming the last `c` is a term.
+			but that would overcomplicate the algorithm.
+			Not worth it, because O(1).
+			*/
 			if (!is_state_terminator(c)) continue
 
 			const task = document.createElement("div")
@@ -102,10 +105,16 @@
 			task.append(toggle_done)
 			toggle_done.textContent = DONE_ENUM.ICON
 			start_i = i + 1
+			/*
+			As implied by the previous statement,
+			we could skip 1 `c` per term,
+			because each task is guaranteed to be
+			at least 1 CU long.
+			This optimization may be worth it.
+			*/
 		}
 
-		// this may overflow the stack
-		// if the user has too many tasks
+		// ⚠️ WARNING: https://stackoverflow.com/questions/63705432/maximum-call-stack-size-exceeded-when-using-the-dots-operator/63706516#63706516
 		ls.append(...task_divs)
 	}
 	ls_loader()
