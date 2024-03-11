@@ -8,6 +8,11 @@ If you're a dev, I recommend you to learn and take inspiration from my code.
 
 If you're a user... I have no idea why would you use this app, since there are much better ones, everywhere. My app has no search functionality, but I'm considering to implement it.
 
+> [!WARNING]
+> Beware of shared storage!
+>
+> HTML-Preview seems to allow pages to access each others' local/session storage. So don't save sensitive info while using the app
+
 ## Why
 The previously-mentioned video is one of the courses that [CIC](https://cincinnatus.edu.do) lists in the specialization of Software Development.
 
