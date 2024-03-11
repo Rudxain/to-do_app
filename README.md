@@ -6,7 +6,7 @@
 
 If you're a dev, I recommend you to learn and take inspiration from my code.
 
-If you're a user... I have no idea why would you use this app, since there are much better ones, everywhere. My app has no search functionality, but I'm considering to implement it.
+If you're a user... I have no idea why would you use this app, since there are much better ones, literally everywhere.
 
 > [!WARNING]
 > Beware of shared storage!
