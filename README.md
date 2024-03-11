@@ -15,7 +15,7 @@ I didn't 100% like how Bluu implemented it, so I did my own variation of it.
 
 I'm sharing it publicly for other future devs who might need this sort of learning material.
 
-> ![WARNING]
+> [!WARNING]
 > Disclaimer:
 > I'm no teacher.
 > I'm not a certified senior dev.
