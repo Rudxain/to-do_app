@@ -1,5 +1,5 @@
 # to-do_app
-[DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) learning project. Inspired by ["ToDo List - Vanilla JavaScript"](https://youtu.be/DEbNCqe2e2U) by @bluuweb.
+[DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) learning project. Inspired by ["ToDo List - Vanilla JavaScript"](https://youtu.be/DEbNCqe2e2U) by [@bluuweb](https://github.com/bluuweb).
 
 ## Usage
 **Don't.** This is not meant for production. It's just for the sake of learning.
