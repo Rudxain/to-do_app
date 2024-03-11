@@ -160,14 +160,14 @@
 	/**@type {HTMLButtonElement}*/(
 		$("save")
 	).addEventListener("click", () => {
-		// to-do: add toast as feedback
 		try {
 			const v =
 				/**@type {HTMLDivElement[]}*/([...ls_children])
 					.map(task_serializer).join("")
 			localStorage.setItem(LS_NAME, v)
+			alert("✅️ Successfully saved!")
 		} catch {
-			alert("Failed to save. Check permissions and free storage space.")
+			alert("❌️ Failed to save. Check permissions and free storage space.")
 		}
 	});
 
