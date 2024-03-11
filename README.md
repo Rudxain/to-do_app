@@ -16,7 +16,7 @@ If you're a user... I have no idea why would you use this app, since there are m
 ## Why
 The previously-mentioned video is one of the courses that [CIC](https://cincinnatus.edu.do) lists in the specialization of Software Development.
 
-I didn't 100% like how Bluu implemented it, so I did my own variation of it.
+I didn't like how Bluu implemented it, so I did my own variation of it.
 
 I'm sharing it publicly for other future devs who might need this sort of learning material.
 
